@@ -1,6 +1,6 @@
 //Задание №1
-let temperature = 34;
-let fahrenheit = (9 / 5 * temperature) + 32;
+let temperature = -100;
+const fahrenheit = (9 / 5 * temperature) + 32;
 console.log(`Температура:
 по Цельсию: ${temperature} ℃,
 по Фаренгейту: ${fahrenheit} F`);
