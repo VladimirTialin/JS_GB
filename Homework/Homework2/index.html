@@ -12,20 +12,20 @@
 <body>
     <script>
         //Задание 1
-        //let num1 = prompt('Введите первое число');
-        //let num2 = prompt('Введите второе число');
-        //console.log((num1 <= 1) ? `введенное число ${num1} =<1` : `другое значение`);
-        //console.log((num2 >= 3) ? `введенное число ${num2} >=3` : `другое значение`);
+        let num1 = prompt('Введите первое число');
+        let num2 = prompt('Введите второе число');
+        console.log((num1 <= 1) ? `введенное число ${num1} =<1` : `другое значение`);
+        console.log((num2 >= 3) ? `введенное число ${num2} >=3` : `другое значение`);
 
         //Задание 2
         let test = true;
         console.log((test) ? '+++' : '---');
         //Задание 3
-        //let number = Number(prompt('Введите число от 1 до 31'));
-        //if(number> 1 && number<=10) console.log(`число ${number} попадает в 1 декаду месяца`);
-        //else if(number>10 && number<=20) console.log(`число ${number} попадает во 2 декаду месяца`);
-        //else if (number>20 && number<=31) console.log(`число ${number} попадает в 3 декаду месяца`);
-        //else console.log(`число не относиться к числа месяца`);
+        let number = Number(prompt('Введите число от 1 до 31'));
+        if (number > 1 && number <= 10) console.log(`число ${number} попадает в 1 декаду месяца`);
+        else if (number > 10 && number <= 20) console.log(`число ${number} попадает во 2 декаду месяца`);
+        else if (number > 20 && number <= 31) console.log(`число ${number} попадает в 3 декаду месяца`);
+        else console.log(`число не относиться к числа месяца`);
 
         // задание 4
         let num = prompt('Введите число');
@@ -37,8 +37,8 @@
                 else value = prompt('Введите число');
             }
         }
-        const number = isNumber(num);
-        console.log(`В числе ${number} количество сотен: ${parseInt(number / 100 % 10)}, десятков: ${parseInt(number / 10 % 10)}, единиц: ${parseInt(number % 10)}`);
+        const result = isNumber(num);
+        console.log(`В числе ${result} количество сотен: ${parseInt(result / 100 % 10)}, десятков: ${parseInt(result / 10 % 10)}, единиц: ${parseInt(result % 10)}`);
 
     </script>
 </body>
